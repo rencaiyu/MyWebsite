@@ -6,14 +6,10 @@
     <meta name="keywords" content="关键词,关键词,关键词,关键词,5个关键词"/>
     <meta name="description" content="网站简介，不超过80个字"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://39.108.163.54:8090/static/css/index.css"
-          th:href="@{http://39.108.163.54:8090/static/css/index.css}" rel="stylesheet">
-    <script src="http://39.108.163.54:8090/static/js/jquery.min.js"
-            th:src="@{http://39.108.163.54:8090/static/js/jquery.min.js}"></script>
-    <script src="http://39.108.163.54:8090/static/js/comm.js"
-            th:src="@{http://39.108.163.54:8090/static/js/comm.js}"></script>
-    <script src="http://39.108.163.54:8090/static/js/modernizr.js"
-            th:src="@{http://39.108.163.54:8090/static/js/modernizr.js}"></script>
+    <link href="../static/css/index.css" th:href="@{/css/index.css}" rel="stylesheet">
+    <script src="../js/jquery.min.js" th:src="@{/js/jquery.min.js}"></script>
+    <script src="../js/comm.js" th:src="@{/js/comm.js}"></script>
+    <script src="../js/modernizr.js" th:src="@{/js/modernizr.js}"></script>
 </head>
 <body>
 <header>
@@ -21,8 +17,8 @@
     <div class="top-nav">
         <h2 id="mnavh"><span class="navicon"></span></h2>
         <ul id="nav">
-            <li><a href="index.html">网站首页</a></li>
-            <li><a href="list.html">个人博客日记</a></li>
+            <li><a href="#" th:href="@{/}">网站首页</a></li>
+            <li><a href="">个人博客日记</a></li>
             <li><a href="#">个人博客模板</a></li>
             <li><a href="#">博客网站制作</a></li>
             <li><a href="#">网页设计心得</a></li>
@@ -44,16 +40,15 @@
     </div>
 </header>
 <aside class="side">
-    <div class="about"><i><a href="/"><img src="images/MyHandPortrait.jpg"
-                                           th:src="@{http://39.108.163.54:8090/static/images/MyHandPortrait.jpg}"></a></i>
+    <div class="about"><i><a href="/"><img src="images/MyHandPortrait.jpg"></a></i>
         <p>RCY:个人介绍</p>
     </div>
-    <div class="weixin"><img src="/微信号" th:src="@{http://39.108.163.54:8090/static/images/myweixin.jpg}">
-        <p>扫码加我好友。</p>
+    <div class="weixin"><img src="/myweixin.jpg" th:src="@{/images/myweixin.jpg}">
+        <p>扫码可以加我好友！！</p>
     </div>
 </aside>
 <main>
-    <div class=" main-content">
+    <div class="main-content">
         <div class="welcome"> 您好，欢迎您访问我们的官方网站！</div>
         <div class="picbox">
             <h2 class="pictitle"><a href="/">个人博客网站</a></h2>
